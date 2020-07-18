@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Weather</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <h3>{{city_name}} City</h3>
-    <h3>{{data}} City</h3>
+    <h3></h3>
+    <h3></h3>
+
     
+    <section>
+        <!--for demo wrap-->
+        <h1>Welcome to {{city_name}} City</h1>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>Longitude</th>
+                <th>Latitude</th>
+                <th>Weather</th>
+                <th>Description</th>
+                <th>Tempreture</th>
+                <th>Pressure</th>
+                <th>Humidity</th>
+
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <td>{{city_longitude}}</td>
+                <td>{{city_latitude}}</td>
+                <td>{{city_weather}}</td>
+                <td>{{city_weather_descr}}</td>
+                <td>{{city_tempreture}}</td>
+                <td>{{city_pressure}}</td>
+                <td>{{city_humidity}}</td>
+              </tr>
+             </tbody>
+          </table>
+        </div>
+      </section>
+      
+      
+      <!-- follow me template -->
+      <div class="made-with-love">
+        Made with
+        <i>♥</i> by
+        <a target="_blank" href="https://www.facebook.com/bibo.hoor">Bilal Hoor</a>
+      </div>
+
 </body>
 </html>

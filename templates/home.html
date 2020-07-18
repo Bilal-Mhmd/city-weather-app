@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Weather</title>
+    <link rel="stylesheet" href="static/home.css">
 </head>
 <body>
     <form method="POST" action="/city" >
-        <h2>Welcom to city weather app!</h2>
-        <h4>Please Enter your city name: </h4>
-        <input type="text" name="city">
-        <button type="submit">Get Data </button>
+        <h1>Welcom to city weather app!</h1>
+        <label>
+        <input type="text" name="city" placeholder="City Name">
+        <span>City Name</span>
+    </label>
+        <button type="submit" class="button">Get Data </button>
     </form>
     
 </body>
